@@ -22,3 +22,15 @@ html,body,#app{
 .el-scrollbar{
     height: 200px !important;
 }
+.el-steps{
+    margin: 15px 0;
+}
+.el-step__title{
+    font-size: 13px;
+}
+.el-icon-info{
+    margin-bottom:-6px ;
+}
+.ql-editor{
+    min-height: 300px;  
+}
