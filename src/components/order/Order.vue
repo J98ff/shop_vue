@@ -186,7 +186,6 @@ export default {
         return this.$message.error('查询物流信息失败')
       }
       this.progressInfo = res.data
-      console.log(this.progressInfo)
       this.progressVisible = true
     }
   }

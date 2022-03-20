@@ -205,7 +205,6 @@ export default {
       }
       this.userlist = res.data.users
       this.total = res.data.total
-      console.log(res)
     },
     // 监听 pagesize改变的事件
     handleSizeChange (newSize) {
@@ -219,7 +218,6 @@ export default {
     },
     // 监听switch开关状态的改变
     async userStateChange (userinfo) {
-      console.log(userinfo)
       const { data: res } = await this.$http.put(`users/${userinfo.id}/state/${userinfo.mg_state}`)
       if (res.meta.status !== 200) {
         userinfo.mg_state = !userinfo.mg_state
